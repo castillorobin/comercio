@@ -9149,7 +9149,7 @@ License: For each use you must have a valid license purchased only from above li
 													<option value="2">Owner</option>
 													<option value="3">Can Edit</option>
 												</select>
-											</div>
+											</div> 
 											<!--end::Access menu-->
 										</div>
 										<!--end::User-->

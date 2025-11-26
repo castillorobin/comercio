@@ -32,7 +32,7 @@ Route::get('/', [DashboardController::class, 'index'])->middleware(['auth', 'ver
 
 Route::get('/dashboard', [DashboardController::class, 'index'])->middleware(['auth', 'verified'])->name('dashboard');
 
-Route::get('/error', function () {
+Route::get('/error', function () { 
     abort(500);
 }); 
 

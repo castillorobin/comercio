@@ -27,7 +27,7 @@ if (!$empleado) {
 } else {
     $envios = $empleado->envios; // ← obtiene TODOS los envíos relacionados
 }
-
+ 
 return view('pages.dashboards.index', compact('envios'));
     }
 
