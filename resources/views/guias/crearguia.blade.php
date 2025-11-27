@@ -39,6 +39,18 @@ License: For each use you must have a valid license purchased only from above li
 		<link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
 		<!--end::Global Stylesheets Bundle-->
 		<script>// Frame-busting to prevent site from being loaded within a frame without permission (click-jacking) if (window.top != window.self) { window.top.location.replace(window.self.location.href); }</script>
+
+		<style>
+			/* Coloca este código en tu archivo CSS */
+.placeholder-select:required:invalid {
+    color: #6c757d; /* Color gris suave de Bootstrap (text-muted) */
+}
+
+/* Opcional: Asegura que las opciones reales tengan el color normal (negro) */
+.placeholder-select option {
+    color: #212529; /* Color de texto normal */
+}
+		</style>
 	</head>
 	<!--end::Head-->
 	<!--begin::Body-->
@@ -168,7 +180,7 @@ License: For each use you must have a valid license purchased only from above li
 									<ul class="breadcrumb breadcrumb-separatorless fw-semibold">
 										<!--begin::Item-->
 										<li class="breadcrumb-item text-white fw-bold lh-1">
-											<a href="index.html" class="text-white text-hover-primary">
+											<a href="/dashboard" class="text-white text-hover-primary">
 												<i class="ki-outline ki-home text-gray-700 fs-6"></i>
 											</a>
 										</li>
@@ -179,7 +191,7 @@ License: For each use you must have a valid license purchased only from above li
 										</li>
 										<!--end::Item-->
 										<!--begin::Item-->
-										
+										<li class="breadcrumb-item text-white fw-bold lh-1">Inicio</li>
 										<!--end::Item-->
 									</ul>
 									<!--end::Breadcrumb-->
@@ -190,7 +202,7 @@ License: For each use you must have a valid license purchased only from above li
 									<!--begin::Page title-->
 									<div class="page-title me-5">
 										<!--begin::Title-->
-										<h1 class="page-heading d-flex text-white fw-bold fs-2 flex-column justify-content-center my-0">Crear Envío
+										<h1 class="page-heading d-flex text-white fw-bold fs-2 flex-column justify-content-center my-0">Crear Guia
 										<!--begin::Description-->
 										<span class="page-desc text-gray-600 fw-semibold fs-6 pt-3"></span>
 										<!--end::Description--></h1>
@@ -271,7 +283,7 @@ License: For each use you must have a valid license purchased only from above li
 																<input type="text" class="form-control form-control-solid" name="meta_title" value="" placeholder="Direccion"/>
 																<!--end::Input-->
 															</div>
-															<div class="col-md-3">
+															<div class="col-md-3 mb-4">
 																<!--begin::Input-->
 																<input type="text" class="form-control form-control-solid" name="meta_title" value="" placeholder="Telefono"/>
 																<!--end::Input-->
@@ -291,10 +303,11 @@ License: For each use you must have a valid license purchased only from above li
 															<div class="col-md-4 mb-4">
 																<!--begin::Input-->
 																
-																<select name="tipo" id="tipo" class="form-control form-control-solid">
+																<select name="tipo" id="tipo" class="form-control form-control-solid placeholder-select">
+																	<option value="" disabled selected hidden>Seleccionar tipo</option>
+																	<option value="Punto fijo">Punto fijo</option>
 																	<option value="Personalizado">Personalizado</option>
 																	<option value="Personalizado departamental">Personalizado departamental</option>
-																	<option value="Punto fijo">Punto fijo</option>
 																	<option value="Casillero">Casillero</option>
 																</select>
 																<!--end::Input-->
@@ -326,14 +339,18 @@ License: For each use you must have a valid license purchased only from above li
 														<!--begin::Input group-->
 														<div class="row fv-row mb-4">
 															
-															<div class="col-md-9">
+															<div class="col-md-8">
 																
 															</div>
-															<div class="col-md-3">
-																<!--begin::Input-->
-																<input type="text" class="form-control form-control-solid" name="meta_title" value="" placeholder="Total a pagar"/>
-																<!--end::Input-->
+															<div class="col-md-4">
+															<div class="d-flex align-items-center"> 
+																<label class="fs-6 fw-semibold form-label me-3 mb-0">
+																	<span class="text-nowrap text-muted">Total a Cobrar: </span>
+																</label>
+																
+																<input type="text" class="form-control form-control-solid" name="meta_title" value="" placeholder="$0.00"/>
 															</div>
+														</div>
 														</div>
 														<!--end::Input group-->
 
