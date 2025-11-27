@@ -266,14 +266,19 @@ License: For each use you must have a valid license purchased only from above li
 														<!--begin::Input group-->
 														<div class="row fv-row mb-4">
 															
-															<div class="col-md-7 mb-4">
+															<div class="col-md-6 mb-4">
 																<!--begin::Input-->
 																<input type="text" class="form-control form-control-solid" name="meta_title" value="" placeholder="Direccion"/>
 																<!--end::Input-->
 															</div>
-															<div class="col-md-5">
+															<div class="col-md-3">
 																<!--begin::Input-->
 																<input type="text" class="form-control form-control-solid" name="meta_title" value="" placeholder="Telefono"/>
+																<!--end::Input-->
+															</div>
+															<div class="col-md-3">
+																<!--begin::Input-->
+																<input type="text" class="form-control form-control-solid" name="meta_title" value="" placeholder="WhatsApp"/>
 																<!--end::Input-->
 															</div>
 														</div>
@@ -285,12 +290,18 @@ License: For each use you must have a valid license purchased only from above li
 															
 															<div class="col-md-4 mb-4">
 																<!--begin::Input-->
-																<input type="text" class="form-control form-control-solid" name="meta_title" value="" placeholder="Tipo de envio"/>
+																
+																<select name="tipo" id="tipo" class="form-control form-control-solid">
+																	<option value="Personalizado">Personalizado</option>
+																	<option value="Personalizado departamental">Personalizado departamental</option>
+																	<option value="Punto fijo">Punto fijo</option>
+																	<option value="Casillero">Casillero</option>
+																</select>
 																<!--end::Input-->
 															</div>
 															<div class="col-md-4 mb-4">
 																<!--begin::Input-->
-																<input type="text" class="form-control form-control-solid" name="meta_title" value="" placeholder="Estado del envio"/>
+																<input type="text" class="form-control form-control-solid" name="meta_title" value="" placeholder="Creado" readonly/>
 																<!--end::Input-->
 															</div>
 
@@ -315,10 +326,10 @@ License: For each use you must have a valid license purchased only from above li
 														<!--begin::Input group-->
 														<div class="row fv-row mb-4">
 															
-															<div class="col-md-7">
+															<div class="col-md-9">
 																
 															</div>
-															<div class="col-md-5">
+															<div class="col-md-3">
 																<!--begin::Input-->
 																<input type="text" class="form-control form-control-solid" name="meta_title" value="" placeholder="Total a pagar"/>
 																<!--end::Input-->
@@ -336,22 +347,19 @@ License: For each use you must have a valid license purchased only from above li
 
 
 														<!--begin::Action buttons-->
-														<div class="row py-5">
-															<div class="col-md-9 offset-md-3">
-																<div class="d-flex">
-																	<!--begin::Button-->
-																	<button type="reset" data-kt-ecommerce-settings-type="cancel" class="btn btn-light me-3">Cancel</button>
-																	<!--end::Button-->
-																	<!--begin::Button-->
-																	<button type="submit" data-kt-ecommerce-settings-type="submit" class="btn btn-primary">
-																		<span class="indicator-label">Save</span>
-																		<span class="indicator-progress">Please wait... 
-																		<span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
-																	</button>
-																	<!--end::Button-->
-																</div>
-															</div>
-														</div>
+													<div class="row py-5">
+    <div class="col-12">
+        <div class="d-flex justify-content-end">
+            <button type="reset" data-kt-ecommerce-settings-type="cancel" class="btn btn-light me-3">Cancelar</button>
+            <button type="submit" data-kt-ecommerce-settings-type="submit" class="btn btn-primary">
+                <span class="indicator-label">Guardar</span>
+                <span class="indicator-progress">Por favor espera... 
+                    <span class="spinner-border spinner-border-sm align-middle ms-2"></span>
+                </span>
+            </button>
+            </div>
+    </div>
+</div>
 														<!--end::Action buttons-->
 													</form>
 													<!--end::Form-->
