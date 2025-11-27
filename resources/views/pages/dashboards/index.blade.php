@@ -308,7 +308,21 @@ License: For each use you must have a valid license purchased only from above li
 												
 												<!--end::Col-->
 												<!--begin::Col-->
-												
+												<div class="col-xl-6">
+													<!--begin::Mixed Widget 8-->
+													<div class="card h-xl-100 mb-xl-8">
+														<!--begin::Body-->
+														<div class="card-body">
+															
+															
+															<!--end:Stats-->
+															
+															<!--end:Team-->
+														</div>
+														<!--end::Body-->
+													</div>
+													<!--end::Mixed Widget 8-->
+												</div>
 												<!--end::Col-->
 											</div>
 											<!--end::Row-->
@@ -327,7 +341,19 @@ License: For each use you must have a valid license purchased only from above li
 									<span class="text-muted fw-semibold me-1">2024&copy;</span>
 									<a href="https://keenthemes.com" target="_blank" class="text-gray-800 text-hover-primary">Keenthemes</a>
 								</div>
-								
+								<!--end::Copyright-->
+								<!--begin::Menu-->
+								<ul class="menu menu-gray-600 menu-hover-primary fw-semibold order-1">
+									<li class="menu-item">
+										<a href="https://keenthemes.com" target="_blank" class="menu-link px-2">About</a>
+									</li>
+									<li class="menu-item">
+										<a href="https://devs.keenthemes.com" target="_blank" class="menu-link px-2">Support</a>
+									</li>
+									<li class="menu-item">
+										<a href="https://1.envato.market/EA4JP" target="_blank" class="menu-link px-2">Purchase</a>
+									</li>
+								</ul>
 								<!--end::Menu-->
 							</div>
 							<!--end::Footer-->
