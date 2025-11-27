@@ -15,8 +15,13 @@ use App\Models\Hestado;
 class EnvioController extends Controller
 {
 
-    public function cambiarEstado(Request $request)
+    public function inicio()
     {
+        return view('guias.crearguia');
+    }
+
+    public function cambiarEstado(Request $request)
+    { 
         $request->validate([
             'guia' => 'required|string|exists:envios,guia', 
             'estado' => 'required|string',

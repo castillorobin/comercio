@@ -11,7 +11,7 @@ use App\Http\Controllers\EnvioController;
 use App\Http\Controllers\CobroController;
 use App\Http\Controllers\PagoController;
 
-/*
+/* 
 |--------------------------------------------------------------------------
 | Web Routes
 |--------------------------------------------------------------------------
@@ -137,6 +137,9 @@ Route::post('/noentregados/actualizar', [App\Http\Controllers\EnvioController::c
     ->name('noentregado.actualizar');
 
 
+
+    //Guias
+    Route::get('/guias/inicio', [EnvioController::class, 'inicio'])->name('envios.inicio');
 
 Route::post('/logout', function () {
     Auth::logout();
