@@ -20,7 +20,7 @@ class DashboardController extends Controller
 */
        // return view('pages.dashboards.index');
 
-       $empleado = Empleado::where('nombre', Auth::user()->name)->first();
+       $empleado = Empleado::where('nombre', "Carlos")->first();
 
 if (!$empleado) {
     $envios = collect(); // vacío si no existe
