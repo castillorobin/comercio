@@ -30,7 +30,7 @@ Route::group(['middleware' => ['auth']], function(){
 
 Route::get('/', [DashboardController::class, 'index'])->middleware(['auth', 'verified']);
 
-Route::get('/dashboard', [DashboardController::class, 'index'])->middleware(['auth', 'verified'])->name('dashboard');
+Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 
 Route::get('/error', function () { 
     abort(500);
