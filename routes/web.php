@@ -28,7 +28,7 @@ Route::group(['middleware' => ['auth']], function(){
     Route::resource('usuario', UsuarioController::class);
 });
 
-Route::get('/', [DashboardController::class, 'index'])->middleware(['auth', 'verified']);
+Route::get('/', [DashboardController::class, 'index'])->name('dashboard2');
 
 Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 
