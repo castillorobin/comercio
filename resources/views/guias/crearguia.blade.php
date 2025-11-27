@@ -268,19 +268,9 @@ License: For each use you must have a valid license purchased only from above li
 														<!--begin::Input group-->
 														<div class="row fv-row mb-7">
 															
-															<div class="col-md-12">
-																<!--begin::Input-->
-																<input type="text" class="form-control form-control-solid" name="meta_title" value="" placeholder="Destinatario"/>
-																<!--end::Input-->
-															</div>
-														</div>
-
-														<!--begin::Input group-->
-														<div class="row fv-row mb-4">
-															
 															<div class="col-md-6 mb-4">
 																<!--begin::Input-->
-																<input type="text" class="form-control form-control-solid" name="meta_title" value="" placeholder="Direccion"/>
+																<input type="text" class="form-control form-control-solid" name="meta_title" value="" placeholder="Destinatario"/>
 																<!--end::Input-->
 															</div>
 															<div class="col-md-3 mb-4">
@@ -294,13 +284,11 @@ License: For each use you must have a valid license purchased only from above li
 																<!--end::Input-->
 															</div>
 														</div>
-														<!--end::Input group-->
-
 
 														<!--begin::Input group-->
 														<div class="row fv-row mb-4">
-															
-															<div class="col-md-4 mb-4">
+
+														<div class="col-md-4 mb-4">
 																<!--begin::Input-->
 																
 																<select name="tipo" id="tipo" class="form-control form-control-solid placeholder-select">
@@ -312,13 +300,28 @@ License: For each use you must have a valid license purchased only from above li
 																</select>
 																<!--end::Input-->
 															</div>
-															<div class="col-md-4 mb-4">
+															
+															<div class="col-md-8 mb-4">
+																<!--begin::Input-->
+																<input type="text" class="form-control form-control-solid" name="meta_title" value="" placeholder="Direccion"/>
+																<!--end::Input-->
+															</div>
+															
+														</div>
+														<!--end::Input group-->
+
+
+														<!--begin::Input group-->
+														<div class="row fv-row mb-4">
+															
+															
+															<div class="col-md-6 mb-4">
 																<!--begin::Input-->
 																<input type="text" class="form-control form-control-solid" name="meta_title" value="" placeholder="Creado" readonly/>
 																<!--end::Input-->
 															</div>
 
-															<div class="col-md-4">
+															<div class="col-md-6">
 																<!--begin::Input-->
 																<input type="date" class="form-control form-control-solid" name="meta_title" value="" placeholder="Fecha de entrega"/>
 																<!--end::Input-->
